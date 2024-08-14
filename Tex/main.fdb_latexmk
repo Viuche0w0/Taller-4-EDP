@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1723656592.28821 "main.tex" "main.pdf" "main" 1723656594.42888 2
+["pdflatex"] 1723668296.43044 "main.tex" "main.pdf" "main" 1723668298.63449 2
   "/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc" 1716849630 2971 def0b6c1f0b107b3b936def894055589 ""
   "/usr/share/texmf-dist/fonts/map/fontname/texfonts.map" 1716849630 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texmf-dist/fonts/tfm/jknappen/ec/ecbx1000.tfm" 1716849630 3584 2d666ecf6d466d8b007246bc2f94d9da ""
@@ -247,13 +247,13 @@
   "/usr/share/texmf-dist/web2c/texmf.cnf" 1716849630 41588 b43d3e860a4f94167ee1e725ff526a72 ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1718255743.00941 5467607 1f3b9843102088c2a7136e28f005c5e4 ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1718255738 7112990 dc9f412a68798a6406c3c51f87d41bf6 ""
-  "ejercicio_1.tex" 1723656591.82826 2741 da9647ca7d43d8da96bf0d9d546b56ac ""
+  "ejercicio_1.tex" 1723668296.41203 4906 959d086b73f73a98fe7a64755d6e027c ""
   "ejercicio_2.tex" 1723518730.44894 125 9354cb02eb47bbb4fca99e9b329f3ee3 ""
   "ejercicio_3.tex" 1723518732.96994 125 9354cb02eb47bbb4fca99e9b329f3ee3 ""
   "ejercicio_4.tex" 1723518734.97393 125 9354cb02eb47bbb4fca99e9b329f3ee3 ""
   "encabezado.tex" 1723518627.54079 7943 6721c935ce7cebf212e3e88a34de5447 ""
-  "main.aux" 1723656594.19726 700 c9d92380f5c61619fef23f28f8bf444c "pdflatex"
-  "main.out" 1723656594.20026 408 084978d0512fa21199ba936d6455a747 "pdflatex"
+  "main.aux" 1723668298.39803 700 c9d92380f5c61619fef23f28f8bf444c "pdflatex"
+  "main.out" 1723668298.40103 408 084978d0512fa21199ba936d6455a747 "pdflatex"
   "main.tex" 1723518499.95791 623 75b63d2efb20519a455589e13cbdd6ea ""
   (generated)
   "main.aux"
