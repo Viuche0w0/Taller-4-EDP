@@ -1,7 +1,34 @@
 \begin{homeworkProblem}
-  Pregunta
+  \begin{enumerate}
+    \item Suponga que $u$ es una solución suave de la ecuación del calor $u_t-\Delta u=0$ en $\mathbb{R}^{n}\times (0,\infty)$. Encuentre una familia de términos $a,b\in\mathbb{R}$ tales que $u_\lambda(x,t)=u(\lambda^ax,\lambda^bt)$ también sea solución de la ecuación del calor para todo $\lambda\in\mathbb{R}^{+}$.
+    \item Use el ejercicio anterior para mostrar que $v(x,t):=x\cdot \nabla u(x,t)+2tu_t(x,t)$ también soluciona la ecuación del calor.
+    \item Suponga que $u$ es una solución suave para la ecuación del calor no lineal $u_t-\Delta u=u^3u_{x_1}$ en $\mathbb{R}^{n}\times (0,\infty)$. Encuentre una familia de términos $a,b,c\in\mathbb{R}$ tales que $u_\lambda(x,t)=\lambda^au(\lambda^bx,\lambda^ct)$ también sea solución de tal ecuación del calor no lineal para todo $\lambda\in\mathbb{R}^{+}$. 
+  \end{enumerate}
   \begin{solucion}
-    Solución
+    \begin{enumerate}
+      \item Suponga que $u$ es una solución suave de la ecuación del calor $u_t-\Delta u=0$ en $\mathbb{R}^{n}\times (0,\infty)$. Encuentre una familia de términos $a,b\in\mathbb{R}$ tales que $u_\lambda(x,t)=u(\lambda^ax,\lambda^bt)$ también sea solución de la ecuación del calor para todo $\lambda\in\mathbb{R}^{+}$.\\
+        Suponga que $u_\lambda(x,t)$ satisface la ecuación del calor, es decir:
+        \begin{align*}
+          u_\lambda_{t}(x,t)-\Delta u_\lambda(x,t)=0,
+        \end{align*}
+        en $\mathbb{R}^{n} \times (0,\infty)$, luego:
+        \begin{align*}
+          u_\lambda_{t}(x,y)&=u_t(\lambda^ax,\lambda^bt)\\
+          &=u_t(\lambda^ax,\lambda^bt)(\lambda^b)\\
+          \Delta u_\lambda&=\sum_{i=1}^{n}\frac{\partial^2 u_\lambda(x,t)}{\partial x_ix_i}\\
+          &=\sum_{i=1}^n\frac{\partial^2 u}{\partial x_ix_i}(\lambda^ax,\lambda^bt)(\lambda^a)^2
+        \end{align*}
+        Luego:
+        \begin{align*}
+          u_{\lambda_t}(x,t)-\Delta u_\lambda(x,t)&=\lambda^b u_t(\lambda^ax,\lambda^{b}t)-\lambda^{2a}\Delta u (\lambda^ax,\lambda^bt)\\
+          &=\lambda^c(u_{t}(\lambda^ax,\lambda^bt)-\Delta u(\lambda^ax,\lambda^bt))\\
+          &=0\\
+        \end{align*}
+        Luego $\lambda^c=\lambda^b=\lambda^{2a}$, por lo que podemos concluir en que $2a=b$, luego $u_{\lambda}(x,t)=u(\lambda^{a}x,\lambda^{2a}t)$ es solución para la ecuación del calor para todo $a\in \mathbb{R}$.
+        \demostrado
+      \item Use el ejercicio anterior para mostrar que $v(x,t):=x\cdot \nabla u(x,t)+2tu_t(x,t)$ también soluciona la ecuación del calor.\\
+        Note que si tomamos $a=1$, como para todo $\lambda\in\mathbb{R}^{+}$ se cumple que $u_{\lambda_{t}}(x,t)$ soluciona la ecuación del calor 
+    \end{enumerate}
     \demostrado
   \end{solucion}  
 \end{homeworkProblem}
