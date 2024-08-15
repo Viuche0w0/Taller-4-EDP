@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1723703121.20704 "main.tex" "main.pdf" "main" 1723703122.4826 0
+["pdflatex"] 1723703325.12327 "main.tex" "main.pdf" "main" 1723703326.29751 0
   "/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc" 1716849630 2971 def0b6c1f0b107b3b936def894055589 ""
   "/usr/share/texmf-dist/fonts/map/fontname/texfonts.map" 1716849630 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texmf-dist/fonts/tfm/jknappen/ec/ecbx1000.tfm" 1716849630 3584 2d666ecf6d466d8b007246bc2f94d9da ""
@@ -257,10 +257,10 @@
   "ejercicio_1.tex" 1723700036.00492 6725 e2b959c6fb38c36e94c5cf871800e6ee ""
   "ejercicio_2.tex" 1723703120.20117 1773 de0201377acc43cc1abaa2426f5333ff ""
   "ejercicio_3.tex" 1723700738.62728 125 9354cb02eb47bbb4fca99e9b329f3ee3 ""
-  "ejercicio_4.tex" 1723518734.97393 125 9354cb02eb47bbb4fca99e9b329f3ee3 ""
+  "ejercicio_4.tex" 1723703188.48426 2153 d25d22991596f3fb6889fbdfe359491f ""
   "encabezado.tex" 1723518627.54079 7943 6721c935ce7cebf212e3e88a34de5447 ""
-  "main.aux" 1723703122.34414 700 c6e4303d795f312ddecc82ce81bc587b "pdflatex"
-  "main.out" 1723703122.34514 408 084978d0512fa21199ba936d6455a747 "pdflatex"
+  "main.aux" 1723703326.16044 700 c6e4303d795f312ddecc82ce81bc587b "pdflatex"
+  "main.out" 1723703326.16144 408 084978d0512fa21199ba936d6455a747 "pdflatex"
   "main.tex" 1723518499.95791 623 75b63d2efb20519a455589e13cbdd6ea ""
   (generated)
   "main.aux"
