@@ -1,8 +1,35 @@
 \begin{homeworkProblem}
-  Pregunta
-  \begin{solucion}
-    Solución
-    No tengo ni puta idea
-    \demostrado
-  \end{solucion}  
+  Considere el problema de Cauchy
+  \begin{align*}
+    \begin{cases}
+      u_t-\Delta u=0, &\text{ en } \mathbb{R}^{n}\times (0,\infty) \text{,} \\
+      u=g, &\text{ en } \mathbb{R}^{n}\times\{t=0\} .
+    \end{cases}
+  \end{align*}
+  \begin{enumerate}
+    \item Suponga que $g\in C(\mathbb{R}^{n})$ es una función absolutamente integrable, es decir,$\|g\|_{L^1(\mathbb{R}^{n})}< \infty$. Muestre que para $0< \beta < \frac{n}{2}$ existe una solucion $u(x,t)$ del problema de Cauchy anterior que satisface:
+    \begin{align*}
+      \lim_{t\rightarrow\infty}t^{\beta}u(x,t)=0,
+    \end{align*}
+    uniformemente en $x\in\mathbb{R}^{n}$.\\
+    \textbf{Sugerencia.} Considere $u(x,t)=(\phi(\cdot,t)*g)(x)$ y muestre que $|u(x,t)|\leq \frac{\|g\|_{L^1}}{(4\pi t)^{n/2}}$.
+    \begin{solucion}
+      Note que:
+      \begin{align*}
+        |u(x,t)|&\leq \left| \int_{\mathbb{R}^{n}}\frac{e^{-\frac{|x-y|^2}{4t}}}{(4\pi t)^{n/2}}g(y)dy \right|,\\
+        &\leq \frac{1}{(4\pi t)^{n/2}}\int_{\mathbb{R}^{n}}\left| e^{-\frac{|x-y|^2}{4t}}g(y) \right|dy,\\
+        &\leq \frac{1}{(4\pi t)^{n/2}}\int_{\mathbb{R}^{n}}\left| g(y) \right|dy,\\
+        &\leq \frac{\|g\|_{L^1}}{(4\pi t)^{n/2}}.
+      \end{align*}
+      Luego, usando esto sabemos que:
+      \begin{align*}
+        |\lim_{t \rightarrow \infty}t^{\beta}u(x,t)|&=\lim_{t\rightarrow\infty}t^{\beta}|u(x,t)|,\\
+        &\leq\lim_{t \rightarrow \infty}\frac{t^{\beta}\|g\|_{L^1}}{(4\pi t)^{n/2}},\\
+        &\leq \lim_{t\rightarrow\infty} \frac{C}{t^{n/2-\beta}},\\
+        &\leq 0.
+      \end{align*}
+      Luego como $|\lim_{t\rightarrow\infty}t^{\beta}u(x,t)|=0$, entonces $\lim_{t\rightarrow\infty}t^{\beta}u(x,t)=0$.
+      \demostrado
+    \end{solucion}
+  \end{enumerate}  
 \end{homeworkProblem}
