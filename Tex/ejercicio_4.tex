@@ -1,7 +1,37 @@
 \begin{homeworkProblem}
-  Pregunta
+  Demuestre el teorema de acotación de derivadas para soluciones de la ecuación del calor. Más precisamente, para cada multi-índices $\alpha$ y $\beta$ existe una constante $C_{\alpha, \beta} > 0$ tal que
+  \begin{equation*}
+    \max_{C(x, t; \frac{r}{2})} |\partial_{x}^{\alpha} \partial_{t}^{\beta}u| \leq \dfrac{C_{\alpha, \beta}}{r^{|\alpha|+2|\beta|+n+2}}||u||_{L^{1}(C(x,t;r))}, 
+  \end{equation*}
+  para todo cilindro $C(x,t;\frac{r}{2}) \subset C(x,t;r) \subset U_{T}$ y toda solución $u$ de la ecuación de la ecuación del calor en $U_{T}$.
   \begin{solucion}
-    Solución
+    Solución. Primero fijemos un punto $(x_{0}, t_{0}) \in U_{T}$ y $r>0$ suficientemente pequeño para que $C:=C(x_{0}, t_{0};r) \subset U_{T}$. Definamos también $C':=C(x_{0}, t_{0};\frac{3}{4}r)$ y $C'':=C(x_{0}, t_{0};\frac{r}{2})$, con el mismo centro superior $(x_{0}, t_{0})$.
+    Tomemos una función suave de cierre $\zeta = \zeta(x,t)$ tal que
+    
+    Extendamos $\zeta \equiv 0$ en $(\mathbb{R}^{n} \times [0,t_{0}]) - C$.\\
+    Como $u$ es solución en $U_{T}$ entonces $u \in C^{\infty}(U_{T})$ y si tomamos
+    \begin{align*}
+      v(x,t) := \zeta(x,t)u(x,t) \hspace{1cm} (x\in \mathbb{R}^{n}, 0 \leq t \leq t_{0}). 
+    \end{align*}
+    Entonces 
+    \begin{align*}
+      v_{t} = \zeta u_{t} + \zeta_{t}u, \Delta v = \zeta \Delta u + 2 \nabla \zeta \cdot \nabla u + \nabla \zeta u.
+    \end{align*}
+    Luego 
+    \begin{align*}
+      v = 0 \hspace{1cm} \text{   en } \mathbb{R}^{n} \times {t=0},
+    \end{align*}
+    y
+    \begin{align*}
+      v_{t} - \Delta v &= \zeta u_{t} + \zeta_{t}u - \zeta \Delta u - 2 \nabla \zeta \cdot \nabla u - \nabla \zeta u\\
+        &= \zeta (u_{t} - \Delta u) + \zeta_{t}u - 2 \nabla \zeta \cdot \nabla u - \nabla \zeta u\\
+        &= \zeta_{t}u - 2 \nabla \zeta \cdot \nabla u - \nabla \zeta u =: \tilde{f}
+    \end{align*}
+    en $\mathbb{R}^{n} \times (0,t_{0})$. Ahora tome
+    \begin{align*}
+      \tilde{v} = \int_{0}^{t} \int_{\mathbb{R}^{n}} \Phi(x-y, t-s) \tilde{f}(y,s) dyds.  
+    \end{align*}
+    De acuerdo a la fórmula de Duhamel
     \demostrado
   \end{solucion}  
 \end{homeworkProblem}
