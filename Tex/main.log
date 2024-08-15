@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024/Arch Linux) (preloaded format=pdflatex 2024.6.13)  14 AUG 2024 15:44
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024/Arch Linux) (preloaded format=pdflatex 2024.6.13)  14 AUG 2024 22:17
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1072,35 +1072,6 @@ File: uesint.fd
 ) [0
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}{/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}] (./ejercicio_1.tex
-./ejercicio_1.tex:13: Double subscript.
-<argument>  u_\lambda _
-                       {t}(x,t)-\Delta u_\lambda (x,t)=0, 
-l.13         \end{align*}
-                         
-I treat `x_1_2' essentially like `x_1{}_2'.
-
-./ejercicio_1.tex:13: Double subscript.
-<argument>  u_\lambda _
-                       {t}(x,t)-\Delta u_\lambda (x,t)=0, 
-l.13         \end{align*}
-                         
-I treat `x_1_2' essentially like `x_1{}_2'.
-
-./ejercicio_1.tex:20: Double subscript.
-<argument>  u_\lambda _
-                       {t}(x,y)&=u_t(\lambda ^ax,\lambda ^bt)\\ &=u_t(\lambd...
-l.20         \end{align*}
-                         
-I treat `x_1_2' essentially like `x_1{}_2'.
-
-./ejercicio_1.tex:20: Double subscript.
-<argument>  u_\lambda _
-                       {t}(x,y)&=u_t(\lambda ^ax,\lambda ^bt)\\ &=u_t(\lambd...
-l.20         \end{align*}
-                         
-I treat `x_1_2' essentially like `x_1{}_2'.
-
-
 Overfull \hbox (55.89302pt too wide) detected at line 43
 []
  []
@@ -1135,7 +1106,7 @@ Here is how much of TeX's memory you used:
  14 hyphenation exceptions out of 8191
  107i,11n,110p,1001b,1404s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx1728.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm0900.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfti1200.pfb>
-Output written on main.pdf (6 pages, 201998 bytes).
+Output written on main.pdf (6 pages, 202044 bytes).
 PDF statistics:
  180 PDF objects out of 1000 (max. 8388607)
  114 compressed objects within 2 object streams

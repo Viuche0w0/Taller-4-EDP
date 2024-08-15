@@ -9,11 +9,11 @@
       \item Suponga que $u$ es una solución suave de la ecuación del calor $u_t-\Delta u=0$ en $\mathbb{R}^{n}\times (0,\infty)$. Encuentre una familia de términos $a,b\in\mathbb{R}$ tales que $u_\lambda(x,t)=u(\lambda^ax,\lambda^bt)$ también sea solución de la ecuación del calor para todo $\lambda\in\mathbb{R}^{+}$.\\
         Suponga que $u_\lambda(x,t)$ satisface la ecuación del calor, es decir:
         \begin{align*}
-          u_\lambda_{t}(x,t)-\Delta u_\lambda(x,t)=0,
+          u_{\lambda_{t}}(x,t)-\Delta u_{\lambda}(x,t)=0,
         \end{align*}
         en $\mathbb{R}^{n} \times (0,\infty)$, luego:
         \begin{align*}
-          u_\lambda_{t}(x,y)&=u_t(\lambda^ax,\lambda^bt)\\
+          u_{\lambda_{t}}(x,y)&=u_t(\lambda^ax,\lambda^bt)\\
           &=u_t(\lambda^ax,\lambda^bt)(\lambda^b)\\
           \Delta u_\lambda&=\sum_{i=1}^{n}\frac{\partial^2 u_\lambda(x,t)}{\partial x_ix_i}\\
           &=\sum_{i=1}^n\frac{\partial^2 u}{\partial x_ix_i}(\lambda^ax,\lambda^bt)(\lambda^a)^2
@@ -38,7 +38,7 @@
           &=2\lambda u_t(\lambda x,\lambda^2 t)+\lambda^2u_{t\lambda}(\lambda x,\lambda^2 t)-2\lambda\Delta u(\lambda x,\lambda^2 t)-\lambda^2\partial_{\lambda}\Delta u(\lambda x,\lambda^2 t)),\\
           &=(2\lambda)(u_t(\lambda x,\lambda^2 t)-\Delta u(\lambda x,\lambda^2 t))+(\lambda^2)(\partial_{\lambda}u_t(\lambda x,\lambda^2 t)-\partial_{\lambda}\Delta u(\lambda x,\lambda^2 t)),\\
           &=(\lambda^2)(\partial_{\lambda}u_t(\lambda x,\lambda^2 t)-\partial_{\lambda}\Delta u(\lambda x,\lambda^2 t)),\\
-          &=((\lambda^2)(\partial_{t}\partial_{\lambda}u(\lambda x,\lambda^2 t)-\Delta \partial_{\lambda}u(\lambda x,\lambda^2 t)),\\
+          &=(\lambda^2)(\partial_{t}\partial_{\lambda}u(\lambda x,\lambda^2 t))-\Delta \partial_{\lambda}u(\lambda x,\lambda^2 t)),\\
           &=0.
         \end{align*}
         Por lo que podemos asegurar que $\partial_{\lambda}u(\lambda x,\lambda^2 t)$ también es solución de la ecuación del calor.\\
