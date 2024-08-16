@@ -1,7 +1,70 @@
 \begin{homeworkProblem}
-  Pregunta
+  Sea $U$ un abierto cotado de $\mathbb{R}^{n}, T>0.$
+  \begin{itemize}
+    \item Muestre que si $v$ es subsolución, entonces
+    \begin{align*}
+      v(x) \leq \dfrac{1}{4r^{n}} \int \int_{E(x,t;r)} v(y,s) \dfrac{|x-y|^{2}}{(t-s)^{2}}dyds,
+    \end{align*}
+    para todo $E(x,t;r) \subset U_{T}.$
+    \item Como consecuencia muestre que $\max_{\overline{U_{T}}} v = \max_{\Gamma_{T}}v.$
+    \item Sea $\phi : \mathbb{R} \rightarrow \mathbb{R}$ una función suave convexa $(\phi '' \geq 0).$ Demuestre que si $u$ es una solución de la ecuación del calor, entonces la función $v=\phi (u)$ es una subsolución.
+    \item Demuestre que si $u$ soluciona la ecuación del calor, entonces $v = |\nabla u|^{2} + u_{t}^{2}$ es una subsolución.
+  \end{itemize}
   \begin{solucion}
-    Solución
+    Como en la prueba de Evans, comenzaremos con un desplazamiento para quedar con $x=0, t=0$. Y tomamos
+    \begin{align*}
+      \phi (r) :&= \frac{1}{r^{n}} \int \int_{E(r)} u(y,s) \frac{|y|^{2}}{s^{2}}dyds\\ 
+                &= \int \int_{E(1)} u(ry,r^{2}s)\frac{|y|^{2}}{s^{2}}dyds.
+    \end{align*}
+    Calculamos
+    \begin{align*}
+      \phi'(r)&= \int \int_{E(1)} \sum_{i=1}^{n} u_{y_{i}}y_{i}\frac{|y|^{2}}{s^{2}} + 2ru_{s}\frac{|y|^{2}}{s} dyds\\ 
+              &= \frac{1}{r^n+1} \int \int_{E(r)} \sum_{i=1}^{n} u_{y_{i}}y_{i}\frac{|y|^{2}}{s^{2}} + 2u_{s}\frac{|y|^{2}}{s} dyds\\
+              &:= A+B. 
+    \end{align*}
+    Note que $\partial E(0,0;r) = \left\{ (y,s) \in \mathbb{R}^{n+1}: s \leq 0, \frac{1}{(-4\pi s)^{\frac{n}{2}}}e^{- \frac{|y|^{2}}{-4s}} = \frac{1}{r^{n}}\right\}$. Es decir, en $\partial E(r)$ se tiene que
+    \begin{align*}
+      \frac{|y|^{2}}{4s} = -nlog(r) + \frac{n}{2}log(-4\pi s).
+    \end{align*}
+    Por lo que si definimos
+    \begin{align*}
+      \psi : = -\frac{n}{2}log(-4\pi s) + \frac{|y|^{2}}{4s} + nlog(r)
+    \end{align*}
+    Es claro que $\psi = 0$ en $\partial E(r)$. Además note que $\psi_{y_{i}}=\dfrac{y_{i}}{2s}$ para $i=1,...,n$. Luego $\displaystyle \sum_{i=1}^{n} y_{i}\psi_{y_{i}} = \frac{|y|^{2}}{2s}$, por lo que podemos escribir B como sigue
+    \begin{align*}
+      B &= \frac{1}{r^{n+1}} \int \int_{E(r)} 4u_{s} \displaystyle \sum_{i=1}^{n} y_{i}\psi_{y_{i}} dyds\\ 
+        & = \frac{1}{r^{n+1}} \int \int_{E(r)} 4\displaystyle \sum_{i=1}^{n} (u_{s} y_{i}) \psi_{y_{i}} dyds.
+    \end{align*}
+    Integrando por partes respecto a cada $y_{i}$ y teniendo en cuenta que $\psi$ se anula en $\partial E(r)$ siempre se perderá el término de borde y en consecuencia
+    \begin{align*}
+      B &= -\frac{1}{r^{n+1}} \int \int_{E(r)} 4\displaystyle \sum_{i=1}^{n} (u_{s} y_{i})_{y_{i}} \psi dyds\\ 
+        &= -\frac{1}{r^{n+1}} \int \int_{E(r)} 4\displaystyle \sum_{i=1}^{n} (u_{s} + u_{s_{y_{i}}}y_{i})\psi dyds\\ 
+        &= -\frac{1}{r^{n+1}} \int \int_{E(r)} 4n u_{s}\psi + 4\displaystyle \sum_{i=1}^{n} u_{sy_{i}}y_{i}\psi dyds.
+    \end{align*}
+    Ahora integramos por partes respecto a $s$ en el segundo término y obtenemos 
+    \begin{align*}
+      B &= \frac{1}{r^{n+1}} \int \int_{E(r)} -4n u_{s}\psi + 4\displaystyle \sum_{i=1}^{n} u_{y_{i}}y_{i}\psi_{s} dyds\\ 
+        &= \frac{1}{r^{n+1}} \int \int_{E(r)} -4n u_{s}\psi + 4\displaystyle \sum_{i=1}^{n} u_{y_{i}}y_{i} \left( -\frac{n}{2s} - \frac{|y|^{2}}{4s^{2}} \right) dyds\\ 
+        &= \frac{1}{r^{n+1}} \int \int_{E(r)} -4n u_{s}\psi - \frac{2n}{s} \displaystyle \sum_{i=1}^{n} u_{y_{i}}y_{i} dyds - A.
+    \end{align*}
+    Ahora es cuando usaremos que $u$ es subsolución $(u_{t} \leq \Delta u )$.
+    \begin{align*}
+      \phi ' (r) &= A + B\\ 
+                 &= \frac{1}{r^{n+1}} \int \int_{E(r)} -4n u_{s}\psi - \frac{2n}{s} \displaystyle \sum_{i=1}^{n} u_{y_{i}}y_{i} dyds\\ 
+                 &\geq \frac{1}{r^{n+1}} \int \int_{E(r)} -4n \Delta u\psi - \frac{2n}{s} \displaystyle \sum_{i=1}^{n} u_{y_{i}}y_{i} dyds.
+    \end{align*}
+    Donde al usar una fórmula de Green (integrar por partes varias veces) en el primer término obtenemos
+    \begin{align*}
+      \phi ' (r) &\geq \frac{1}{r^{n+1}} \int \int_{E(r)} 4n \nabla u \cdot \nabla \psi - \frac{2n}{s} \displaystyle \sum_{i=1}^{n} u_{y_{i}}y_{i} dyds\\ 
+                 &=\displaystyle \sum_{i=1}^{n} \frac{1}{r^{n+1}} \int \int_{E(r)} 4n u_{y_{i}} \psi_{y_{i}} - \frac{2n}{s} u_{y_{i}}y_{i} dyds\\ 
+                 &= \displaystyle \sum_{i=1}^{n} \frac{1}{r^{n+1}} \int \int_{E(r)} 4n u_{y_{i}} \left( \frac{y_{i}}{2s}\right) - \frac{2n}{s} u_{y_{i}}y_{i} dyds\\ 
+                 &=0.
+    \end{align*} 
+    Si tomamos $0< \delta < r$, se cumple
+    \begin{align*}
+      \int_{\delta}^{r} \phi '(z) dz = \phi(r) - \phi(\delta) \geq 0.
+    \end{align*}
+    Luego, $\phi(r) \geq \lim_{\delta \rightarrow 0} \phi(\delta) = u(0,0) \left(\lim_{\delta \rightarrow 0} \dfrac{1}{\delta ^{n}} \displaystyle \int \displaystyle \int_{E(\delta)} \frac{|y|^{2}}{s^{2}} dyds\right) = 4 u(0,0)$.
     \demostrado
   \end{solucion}  
 \end{homeworkProblem}
