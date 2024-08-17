@@ -86,9 +86,18 @@
       (\partial_t-\Delta)v(x_0,t_0)> 0,
     \end{align*}
     lo cual es una contradicción, ya que como $v$ es subsolución, se tiene que $(\partial_t-\Delta)v(x,t)\leq 0$ para $(x,t)\in U_T$, de lo que se debe seguir que $v$ alcanza su máximo en $\Gamma_T$.\\
-    Por otro lado, si suponemos que $t_0=T$, sabemos que respecto a $t$, la $v$ en $t_0$ debe de ser creciente, por lo que podemos asegurar que $v_t(x_0,t_0)\geq 0$, y como la región debe de ser relativamente cóncava, es decir, $v_{x_ix_i}(x_0,t_0)\leq 0$, de lo cuál se sigue que:
+    Por otro lado, si suponemos que $t_0=T$, usando el numeral anterior:
     \begin{align*}
-      (\partial_t-\Delta)v(x_0,t_0)\geq 0
+      M=v(x_0,t_0)&\leq \int \int_{E(x_0,t_0,r)}v(y,s)\frac{|x_0-y|^2}{|t_0-s|^2}dyds\\
+      &\leq M,
+    \end{align*}
+    de lo que se sigue que:
+    \begin{align*}
+      \int \int_{E(x_0,t_0,r)}(M-v(y,s))\frac{|x_0-y|^2}{|t_0-s|^2}dyds &=0
+    \end{align*}
+    Luego como $(M-v(y,s))\geq 0$ y la integral da $0$, por la continuidad de $v$  se tiene que para todo $(y,s)\in E(x_0,t_0,r)$ se cumple que $v(y,s)=M$, por lo cuál podemos asegurar que $v_t(x_0,t_0)=0$, lo que nos implica que: 
+    \begin{align*}
+      (\partial_t-\Delta)v(x_0,t_0)> 0
     \end{align*}
     Luego, $(\partial_{t}-\Delta)$
   \end{solucion}  
