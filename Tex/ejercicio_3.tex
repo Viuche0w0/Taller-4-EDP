@@ -73,11 +73,11 @@
     Hacemos un cambio a coordenadas polares y otro cambio de variable $w = \frac{y}{r}$
     \begin{align*}
       &\int_{-\frac{1}{4\pi}}^{0} \int_{0}^{\sqrt{2nslog(-4\pi s)}} \int_{\partial B(0,1)} \frac{|rw|^{2}}{s^{2}} r^{n-1} dS(w)drds\\
-      &= \int_{-\frac{1}{4\pi}}^{0} \int_{0}^{\sqrt{2nslog(-4\pi s)}} \int_{\partial B(0,1)} \frac{r^{n-1}}{s^{2}} dS(w)drds\\
-      &|B(0,1)| \int_{-\frac{1}{4\pi}}^{0} \int_{0}^{\sqrt{2nslog(-4\pi s)}} \frac{r^{n-1}}{s^{2}} drds\\ 
-      &= \frac{|B(0,1)|}{n+2} \int_{-\frac{1}{4\pi}}^{0} \frac{(2nslog(-4\pi s)^{\frac{n}{2}})}{s^{2}} ds\\
-      &= \frac{|B(0,1)|}{n+2} \int_{0}^{\frac{1}{4\pi}} \frac{(2nslog(4\pi s))^{\frac{n}{2}}}{s^{2}} ds\\
-      &= \frac{|B(0,1)|(2n)^{\frac{n}{2}+1}}{n+2} \int_{0}^{\frac{1}{4\pi}} s^{\frac{n}{2}} (log(4\pi s))^{\frac{n}{2}+1} ds
+      &= \int_{-\frac{1}{4\pi}}^{0} \int_{0}^{\sqrt{2nslog(-4\pi s)}} \int_{\partial B(0,1)} \frac{r^{n+1}}{s^{2}} dS(w)drds\\
+      &|B(0,1)| \int_{-\frac{1}{4\pi}}^{0} \int_{0}^{\sqrt{2nslog(-4\pi s)}} \frac{r^{n+1}}{s^{2}} drds\\ 
+      &= \frac{|B(0,1)|}{n+2} \int_{-\frac{1}{4\pi}}^{0} \frac{(2nslog(-4\pi s)^{\frac{n}{2} + 1})}{s^{2}} ds\\
+      &= \frac{|B(0,1)|}{n+2} \int_{0}^{\frac{1}{4\pi}} \frac{(2nslog(4\pi s))^{\frac{n}{2} +1}}{s^{2}} ds\\
+      &= \frac{|B(0,1)|(2n)^{\frac{n}{2}+1}}{n+2} \int_{0}^{\frac{1}{4\pi}} s^{\frac{n}{2}-1} (log(4\pi s))^{\frac{n}{2}+1}ds
     \end{align*}
     \demostrado
     Ahora veamos que como consecuencia se tiene que $\max_{\overline{U_T}}v=\max_{\Gamma_T}v$.\\
