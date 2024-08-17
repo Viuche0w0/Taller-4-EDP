@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.18.1 (MiKTeX 24.4) (format=lualatex 2024.8.14)  16 AUG 2024 23:05
+This is LuaHBTeX, Version 1.18.1 (MiKTeX 24.4) (format=lualatex 2024.8.14)  16 AUG 2024 23:31
  restricted system commands enabled.
  file:line:error style messages enabled.
 **c:/Users/SUPER/OneDrive/Escritorio/Taller-4-EDP/Tex/main.tex
@@ -1528,15 +1528,15 @@ Overfull \hbox (61.40456pt too wide) detected at line 44
 
 [10]
 
-[11]) (./ejercicio_4.tex
+[11])
 
-[12
+[12] (./ejercicio_4.tex
 
-]
+[13]
 
-[13])
+[14])
 
-[14] (c:/Users/SUPER/OneDrive/Escritorio/Taller-4-EDP/Tex/build/main.aux
+[15] (c:/Users/SUPER/OneDrive/Escritorio/Taller-4-EDP/Tex/build/main.aux
 LaTeX Info: Redefining \. on input line 11.
 LaTeX Info: Redefining \% on input line 11.
 )
@@ -1549,13 +1549,13 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 )
 
 Here is how much of LuaTeX's memory you used:
- 36964 strings out of 475910
+ 36965 strings out of 475910
  125236,1977958 words of node,token memory allocated
  1526 words of node memory still in use:
    32 hlist, 2 vlist, 14 rule, 1 local_par, 4 glue, 4 kern, 1 penalty, 1 margin_
 kern, 3 glyph, 109 attribute, 74 glue_spec, 92 attribute_list, 2 write, 24 pdf_l
 iteral, 24 pdf_colorstack nodes
-   avail lists: 2:4012,3:715,4:113,5:974,6:53,7:7523,8:70,9:2536,10:6,11:396
+   avail lists: 2:4603,3:715,4:113,5:1027,6:58,7:7312,8:70,9:2814,10:6,11:366
  58598 multiletter control sequences out of 65536+600000
  69 fonts using 4231271 bytes
  107i,18n,104p,1052b,1547s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -1582,9 +1582,9 @@ sers/SUPER/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri12.pfb><C:/Us
 ers/SUPER/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm
 10.pfb><C:/Users/SUPER/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts
 /symbols/msbm7.pfb>
-Output written on main.pdf (15 pages, 359916 bytes).
+Output written on main.pdf (16 pages, 360709 bytes).
 
-PDF statistics: 217 PDF objects out of 1000 (max. 8388607)
- 30 named destinations out of 1000 (max. 131072)
+PDF statistics: 221 PDF objects out of 1000 (max. 8388607)
+ 31 named destinations out of 1000 (max. 131072)
  288 words of extra memory for PDF output out of 10000 (max. 100000000)
 

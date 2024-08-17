@@ -75,8 +75,8 @@
       &\int_{-\frac{1}{4\pi}}^{0} \int_{0}^{\sqrt{2nslog(-4\pi s)}} \int_{\partial B(0,1)} \frac{|rw|^{2}}{s^{2}} r^{n-1} dS(w)drds\\
       &= \int_{-\frac{1}{4\pi}}^{0} \int_{0}^{\sqrt{2nslog(-4\pi s)}} \int_{\partial B(0,1)} \frac{r^{n+1}}{s^{2}} dS(w)drds\\
       &|B(0,1)| \int_{-\frac{1}{4\pi}}^{0} \int_{0}^{\sqrt{2nslog(-4\pi s)}} \frac{r^{n+1}}{s^{2}} drds\\ 
-      &= \frac{|B(0,1)|}{n+2} \int_{-\frac{1}{4\pi}}^{0} \frac{(2nslog(-4\pi s))^{\frac{n}{2} + 1}}{s^{2}} ds\\ 
-      &= \frac{|B(0,1)|(2n)^{\frac{n}{2} + 1}}{n+2} \int_{-\frac{1}{4\pi}}^{0} \frac{(slog(-4\pi s))^{\frac{n}{2} + 1}}{s^{2}} ds\\ 
+      &= \frac{|\partial B(0,1)|}{n+2} \int_{-\frac{1}{4\pi}}^{0} \frac{(2nslog(-4\pi s))^{\frac{n}{2} + 1}}{s^{2}} ds\\ 
+      &= \frac{|\partial B(0,1)|(2n)^{\frac{n}{2} + 1}}{n+2} \int_{-\frac{1}{4\pi}}^{0} \frac{(slog(-4\pi s))^{\frac{n}{2} + 1}}{s^{2}} ds\\ 
     \end{align*}
     Ahora sigamos viendo esta última integral. Considerando la sustitución $x = -4\pi s$ tenemos:
     \begin{align*}
@@ -99,8 +99,15 @@
     \end{align*}
     Juntando ahora todas las constantes concluimos
     \begin{align*}
-      si
+      \int \int_{E(0,0,1)} \frac{|y|^{2}}{r^{2}} dyds &= \frac{(2n)^{\frac{n}{2} + 1}}{n+2} |B(0,1)| \frac{1}{\pi{\frac{n}{2}} 2^{\frac{n}{2}-2} n^{\frac{n}{2}+2}} \Gamma (2 + \frac{n}{2})\\ 
+      &= \frac{8|\partial B(0,1)|}{n(n+2) \pi^{\frac{n}{2}}} \Gamma (2 + \frac{n}{2})\\ 
+      &= \frac{8|\partial B(0,1)|}{n(n+2) \pi^{\frac{n}{2}}} (1 + \frac{n}{2}) \Gamma (1 + \frac{n}{2}) \hspace{1cm} \text{ pues } \Gamma(t+1) = t \Gamma(t)\\
+      &= \frac{4|\partial B(0,1)|}{n \pi^{\frac{n}{2}}} \Gamma(1+ \frac{n}{2})\\
+      &= \frac{4|\partial B(0,1)|}{n \pi^{\frac{n}{2}}} \frac{n}{2} \Gamma (\frac{n}{2})\\
+      &= 4|\partial B(0,1)| \frac{\Gamma(\frac{n}{2})}{2\pi ^{\frac{n}{2}}}\\ 
+      &= 4
     \end{align*}
+    Debido a que $|\partial B(0,1)| \frac{2\pi ^{\frac{n}{2}}}{\Gamma(\frac{n}{2})}$. De modo que $\phi(r) \geq 4u(0,0)$, completando así la demostración.
     \demostrado
     Ahora veamos que como consecuencia se tiene que $\max_{\overline{U_T}}v=\max_{\Gamma_T}v$.\\
     Suponga $v_{\epsilon}(x,t)=u(x,t)-\epsilon t$, con $u$ solución de la ecuación del calor, entonces:

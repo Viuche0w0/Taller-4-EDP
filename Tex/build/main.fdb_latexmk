@@ -1,5 +1,5 @@
 # Fdb version 4
-["lualatex"] 1723867519.33713 "c:/Users/SUPER/OneDrive/Escritorio/Taller-4-EDP/Tex/main.tex" "build/main.pdf" "main" 1723867527.4843 0
+["lualatex"] 1723869098.56091 "c:/Users/SUPER/OneDrive/Escritorio/Taller-4-EDP/Tex/main.tex" "build/main.pdf" "main" 1723869105.02067 0
   "C:/Users/SUPER/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1723692664 80941 6bf28523375a0bf9b64d01aa39ed7dbf ""
   "C:/Users/SUPER/AppData/Local/MiKTeX/fonts/pk/ljfour/public/esint/dpi600/esint10.pk" 1721873431 10544 e2b432a00c7d143b357c5cf39fa5b8ee ""
   "C:/Users/SUPER/AppData/Local/MiKTeX/luatex-cache/generic/fonts/otl/lmroman10-regular.luc" 1718859467 127337 16f95dda85ac794848ccee2ec10b92cf ""
@@ -315,12 +315,12 @@
   "C:/Users/SUPER/AppData/Local/Programs/MiKTeX/tex/luatex/luaotfload/luaotfload-unicode.lua" 1709104755 7917 cebc6454abe34f2fe1c1248f8b2453da ""
   "C:/Users/SUPER/AppData/Local/Programs/MiKTeX/tex/luatex/luaotfload/luaotfload.lua" 1709104755 13565 50482dad4c221a79dbdbb982122baf8c ""
   "C:/Users/SUPER/AppData/Roaming/MiKTeX/tex/generic/config/language.dat" 1723692668 2269 c2be9efecb8e53facf8213ae101f16af ""
-  "build/main.aux" 1723867526 702 cfc25e4cd6181ac8481d6b9740230ac2 "lualatex"
-  "build/main.out" 1723867526 408 084978d0512fa21199ba936d6455a747 "lualatex"
+  "build/main.aux" 1723869104 702 b116215bfd55fbff427bdd07f4615212 "lualatex"
+  "build/main.out" 1723869104 408 084978d0512fa21199ba936d6455a747 "lualatex"
   "c:/Users/SUPER/OneDrive/Escritorio/Taller-4-EDP/Tex/main.tex" 1723864555 651 75b63d2efb20519a455589e13cbdd6ea ""
   "ejercicio_1.tex" 1723864555 6827 f2657a47006a2aaa70330ad1497130ea ""
   "ejercicio_2.tex" 1723864555 7595 4af001b6b5f7f9a9cf304b2545d087fd ""
-  "ejercicio_3.tex" 1723867509 8886 627c3609c78384eeac225b1b96f93f89 ""
+  "ejercicio_3.tex" 1723869091 9035 8e05eb607b386f4cd08bf0502a2372d8 ""
   "ejercicio_4.tex" 1723864555 6343 27a176ac99a732ed3407746347045345 ""
   "encabezado.tex" 1723864555 8216 6721c935ce7cebf212e3e88a34de5447 ""
   "main.tex" 1723864555 651 75b63d2efb20519a455589e13cbdd6ea ""
