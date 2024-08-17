@@ -80,7 +80,7 @@
     \end{align*}
     Ahora sigamos viendo esta última integral. Considerando la sustitución $x = -4\pi s$ tenemos:
     \begin{align*}
-      \int_{-\frac{1}{4\pi}}^{0} \frac{(slog(-4\pi s))^{\frac{n}{2} + 1}}{s^{2}} ds &= \int{1}^{0} \frac{((-\frac{x}{4\pi})log(x))^{\frac{n}{2}+1}}{(s^\frac{x}{4\pi})^{2}}(- \frac{1}{4\pi})dx,
+      \int_{-\frac{1}{4\pi}}^{0} \frac{(slog(-4\pi s))^{\frac{n}{2} + 1}}{s^{2}} ds &= \int_{1}^{0} \frac{((-\frac{x}{4\pi})log(x))^{\frac{n}{2}+1}}{(s^\frac{x}{4\pi})^{2}}(- \frac{1}{4\pi})dx,
     \end{align*}
     tomando $z = -log(x)$:
     \begin{align*}
@@ -88,6 +88,19 @@
       =& \frac{1}{(4\pi){\frac{n}{2}}} \int_{0}^{\infty} e^{\frac{-nz}{2}}z^{\frac{n}{2}+1}dz
     \end{align*}
     Cambiando $w=\frac{nz}{2}$
+    \begin{align*}
+      &= \frac{1}{(4\pi){\frac{n}{2}}} \int_{0}^{\infty} e^{-w}(\frac{2w}{n})^{\frac{n}{2}+1}\frac{2}{n}dw\\ 
+      &= \frac{1}{(4\pi){\frac{n}{2}}} (\frac{2}{n})^{\frac{n}{2}+1} \int_{0}^{\infty} e^{-w} w^{\frac{n}{2}+1}dw\\ 
+      &= \frac{1}{2^{n} \pi{\frac{n}{2}} 2^{-\frac{n}{2}-2} n^{\frac{n}{2}+2}} \int_{0}^{\infty} e^{-w} w^{\frac{n}{2}+2-1}dw  
+    \end{align*}
+    Por como está definida la función $\Gamma$, se tiene que
+    \begin{align*}
+      &= \frac{1}{\pi{\frac{n}{2}} 2^{\frac{n}{2}-2} n^{\frac{n}{2}+2}} \Gamma (2 + \frac{n}{2})
+    \end{align*}
+    Juntando ahora todas las constantes concluimos
+    \begin{align*}
+      si
+    \end{align*}
     \demostrado
     Ahora veamos que como consecuencia se tiene que $\max_{\overline{U_T}}v=\max_{\Gamma_T}v$.\\
     Supongamos que existe $(x_0,t_0)\in\overline{U_T}\setminus\Gamma_T=U\times (0,T]$ tal que $v(x_0,t_0)=\max_{\overline{U_T}}v$. Veamos primero el caso en el que $t_0<T$, en el cual el punto $(x_0,t_0)$ es interior a $U_T$. Luego, como $v(x_0,t_0)$ es un máximo local, entonces $v_t(x_0,t_0)=0$ y como debe de ser una región cóncava, entonces $v_{x_ix_i}(x_0,t_0)<0$ para cualquier $i\in\{1,2,\cdots,n\}$, por lo cuál podemos afirmar que:
