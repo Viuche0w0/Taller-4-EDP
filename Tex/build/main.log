@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.18.1 (MiKTeX 24.4) (format=lualatex 2024.8.14)  16 AUG 2024 20:10
+This is LuaHBTeX, Version 1.18.1 (MiKTeX 24.4) (format=lualatex 2024.8.14)  16 AUG 2024 20:12
  restricted system commands enabled.
  file:line:error style messages enabled.
 **c:/Users/SUPER/OneDrive/Escritorio/Taller-4-EDP/Tex/main.tex
@@ -1553,7 +1553,7 @@ Here is how much of LuaTeX's memory you used:
    32 hlist, 2 vlist, 14 rule, 1 local_par, 4 glue, 4 kern, 1 penalty, 1 margin_
 kern, 3 glyph, 109 attribute, 74 glue_spec, 92 attribute_list, 2 write, 24 pdf_l
 iteral, 24 pdf_colorstack nodes
-   avail lists: 2:3241,3:715,4:113,5:784,6:46,7:6576,8:70,9:2011,10:6,11:372
+   avail lists: 2:3238,3:715,4:113,5:784,6:46,7:6576,8:70,9:2011,10:6,11:372
  58595 multiletter control sequences out of 65536+600000
  69 fonts using 4231271 bytes
  107i,18n,104p,1052b,1547s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -1580,7 +1580,7 @@ sers/SUPER/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri12.pfb><C:/Us
 ers/SUPER/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm
 10.pfb><C:/Users/SUPER/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts
 /symbols/msbm7.pfb>
-Output written on main.pdf (14 pages, 352355 bytes).
+Output written on main.pdf (14 pages, 352352 bytes).
 
 PDF statistics: 213 PDF objects out of 1000 (max. 8388607)
  29 named destinations out of 1000 (max. 131072)
