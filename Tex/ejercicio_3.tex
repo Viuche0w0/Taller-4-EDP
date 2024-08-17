@@ -75,10 +75,19 @@
       &\int_{-\frac{1}{4\pi}}^{0} \int_{0}^{\sqrt{2nslog(-4\pi s)}} \int_{\partial B(0,1)} \frac{|rw|^{2}}{s^{2}} r^{n-1} dS(w)drds\\
       &= \int_{-\frac{1}{4\pi}}^{0} \int_{0}^{\sqrt{2nslog(-4\pi s)}} \int_{\partial B(0,1)} \frac{r^{n+1}}{s^{2}} dS(w)drds\\
       &|B(0,1)| \int_{-\frac{1}{4\pi}}^{0} \int_{0}^{\sqrt{2nslog(-4\pi s)}} \frac{r^{n+1}}{s^{2}} drds\\ 
-      &= \frac{|B(0,1)|}{n+2} \int_{-\frac{1}{4\pi}}^{0} \frac{(2nslog(-4\pi s)^{\frac{n}{2} + 1})}{s^{2}} ds\\
-      &= \frac{|B(0,1)|}{n+2} \int_{0}^{\frac{1}{4\pi}} \frac{(2nslog(4\pi s))^{\frac{n}{2} +1}}{s^{2}} ds\\
-      &= \frac{|B(0,1)|(2n)^{\frac{n}{2}+1}}{n+2} \int_{0}^{\frac{1}{4\pi}} s^{\frac{n}{2}-1} (log(4\pi s))^{\frac{n}{2}+1}ds
+      &= \frac{|B(0,1)|}{n+2} \int_{-\frac{1}{4\pi}}^{0} \frac{(2nslog(-4\pi s))^{\frac{n}{2} + 1}}{s^{2}} ds\\ 
+      &= \frac{|B(0,1)|(2n)^{\frac{n}{2} + 1}}{n+2} \int_{-\frac{1}{4\pi}}^{0} \frac{(slog(-4\pi s))^{\frac{n}{2} + 1}}{s^{2}} ds\\ 
     \end{align*}
+    Ahora sigamos viendo esta última integral. Considerando la sustitución $x = -4\pi s$ tenemos:
+    \begin{align*}
+      \int_{-\frac{1}{4\pi}}^{0} \frac{(slog(-4\pi s))^{\frac{n}{2} + 1}}{s^{2}} ds &= \int{1}^{0} \frac{((-\frac{x}{4\pi})log(x))^{\frac{n}{2}+1}}{(s^\frac{x}{4\pi})^{2}}(- \frac{1}{4\pi})dx,
+    \end{align*}
+    tomando $z = -log(x)$:
+    \begin{align*}
+      &\int_{0}^{\infty} \frac{((-\frac{e^{-z}}{4\pi})log(x))^{\frac{n}{2}+1}}{(-\frac{e^{-z}}{4\pi})^{2}}(-e^{-z})dz\\
+      =& \frac{1}{(4\pi){\frac{n}{2}}} \int_{0}^{\infty} e^{\frac{-nz}{2}}z^{\frac{n}{2}+1}dz
+    \end{align*}
+    Cambiando $w=\frac{nz}{2}$
     \demostrado
     Ahora veamos que como consecuencia se tiene que $\max_{\overline{U_T}}v=\max_{\Gamma_T}v$.\\
     Supongamos que existe $(x_0,t_0)\in\overline{U_T}\setminus\Gamma_T=U\times (0,T]$ tal que $v(x_0,t_0)=\max_{\overline{U_T}}v$. Veamos primero el caso en el que $t_0<T$, en el cual el punto $(x_0,t_0)$ es interior a $U_T$. Luego, como $v(x_0,t_0)$ es un máximo local, entonces $v_t(x_0,t_0)=0$ y como debe de ser una región cóncava, entonces $v_{x_ix_i}(x_0,t_0)<0$ para cualquier $i\in\{1,2,\cdots,n\}$, por lo cuál podemos afirmar que:
@@ -86,18 +95,9 @@
       (\partial_t-\Delta)v(x_0,t_0)> 0,
     \end{align*}
     lo cual es una contradicción, ya que como $v$ es subsolución, se tiene que $(\partial_t-\Delta)v(x,t)\leq 0$ para $(x,t)\in U_T$, de lo que se debe seguir que $v$ alcanza su máximo en $\Gamma_T$.\\
-    Por otro lado, si suponemos que $t_0=T$, usando el numeral anterior:
+    Por otro lado, si suponemos que $t_0=T$, sabemos que respecto a $t$, la $v$ en $t_0$ debe de ser creciente, por lo que podemos asegurar que $v_t(x_0,t_0)\geq 0$, y como la región debe de ser relativamente cóncava, es decir, $v_{x_ix_i}(x_0,t_0)\leq 0$, de lo cuál se sigue que:
     \begin{align*}
-      M=v(x_0,t_0)&\leq \int \int_{E(x_0,t_0,r)}v(y,s)\frac{|x_0-y|^2}{|t_0-s|^2}dyds\\
-      &\leq M,
-    \end{align*}
-    de lo que se sigue que:
-    \begin{align*}
-      \int \int_{E(x_0,t_0,r)}(M-v(y,s))\frac{|x_0-y|^2}{|t_0-s|^2}dyds &=0
-    \end{align*}
-    Luego como $(M-v(y,s))\geq 0$ y la integral da $0$, por la continuidad de $v$  se tiene que para todo $(y,s)\in E(x_0,t_0,r)$ se cumple que $v(y,s)=M$, por lo cuál podemos asegurar que $v_t(x_0,t_0)=0$, lo que nos implica que: 
-    \begin{align*}
-      (\partial_t-\Delta)v(x_0,t_0)> 0
+      (\partial_t-\Delta)v(x_0,t_0)\geq 0
     \end{align*}
     Luego, $(\partial_{t}-\Delta)$
   \end{solucion}  
