@@ -103,15 +103,37 @@
     \end{align*}
     \demostrado
     Ahora veamos que como consecuencia se tiene que $\max_{\overline{U_T}}v=\max_{\Gamma_T}v$.\\
-    Supongamos que existe $(x_0,t_0)\in\overline{U_T}\setminus\Gamma_T=U\times (0,T]$ tal que $v(x_0,t_0)=\max_{\overline{U_T}}v$. Veamos primero el caso en el que $t_0<T$, en el cual el punto $(x_0,t_0)$ es interior a $U_T$. Luego, como $v(x_0,t_0)$ es un máximo local, entonces $v_t(x_0,t_0)=0$ y como debe de ser una región cóncava, entonces $v_{x_ix_i}(x_0,t_0)<0$ para cualquier $i\in\{1,2,\cdots,n\}$, por lo cuál podemos afirmar que:
+    Suponga $v_{\epsilon}(x,t)=u(x,t)-\epsilon t$, con $u$ solución de la ecuación del calor, entonces:
     \begin{align*}
-      (\partial_t-\Delta)v(x_0,t_0)> 0,
+      (\partial_t-\Delta)v&=(\partial_t-\Delta)(u-\epsilon t),\\
+      &=(\partial_t-\Delta)u - \epsilon,\\
+      &< 0 .
     \end{align*}
-    lo cual es una contradicción, ya que como $v$ es subsolución, se tiene que $(\partial_t-\Delta)v(x,t)\leq 0$ para $(x,t)\in U_T$, de lo que se debe seguir que $v$ alcanza su máximo en $\Gamma_T$.\\
-    Por otro lado, si suponemos que $t_0=T$, sabemos que respecto a $t$, la $v$ en $t_0$ debe de ser creciente, por lo que podemos asegurar que $v_t(x_0,t_0)\geq 0$, y como la región debe de ser relativamente cóncava, es decir, $v_{x_ix_i}(x_0,t_0)\leq 0$, de lo cuál se sigue que:
+    Luego, usando el principio del máximo para soluciones de la ecuación del calor se tiene que:
     \begin{align*}
-      (\partial_t-\Delta)v(x_0,t_0)\geq 0
+      \max_{\overline{U_T}}u&=\max_{\overline{U_T}}v_\epsilon,\\
+      &=\max_{\Gamma_T}v_\epsilon(u-\epsilon t),\\
+      &\leq \max_{\Gamma_T}u.
     \end{align*}
-    Luego, por hipótesis $(\partial_{t}-\Delta)v\leq 0$, a lo que se concluye que $(\partial_t-\Delta)v=0$.
+    Luego:
+    \begin{align*}
+      \max_{\overline{U_T}}u&=\max_{\overline{U_T}}u-\epsilon t + \epsilon t,\\
+      &\leq \max_{\overline{U_T}}v_\epsilon -\epsilon T,\\
+    \end{align*}
+    de lo que se sigue que:
+    \begin{align*}
+      \max_{\overline{U_T}}u-\epsilon T&\leq \max_{\overline{U_T}}v,\\
+      &\leq \max_{\Gamma_T}u.
+    \end{align*}
+    Ahora si tomamos $\epsilon\rightarrow 0^+$, se puede concluir que:
+    \begin{align*}
+      \max_{\overline{U_T}}u&\leq \max_{\Gamma_T}u, 
+    \end{align*}
+    de lo que se sigue que:
+    \begin{align*}
+      \max_{\overline{U_T}}v=\max_{\Gamma_T}v.
+    \end{align*}
+    Lo cual concluye la demostración.
+    \demostrado
   \end{solucion}  
 \end{homeworkProblem}
